@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -g -shared -fPIC -lyed find_bracket.c -o find_bracket.so
+gcc $(yed --print-cflags) $(yed --print-ldflags) -o find_bracket.so -g find_bracket.c
