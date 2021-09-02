@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc $(yed --print-cflags) $(yed --print-ldflags) -o find_bracket.so -g find_bracket.c
+gcc -o find_bracket.so find_bracket.c $(yed --print-cflags) $(yed --print-ldflags)
