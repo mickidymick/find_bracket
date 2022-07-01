@@ -36,6 +36,7 @@ void brace_goto_other(int nargs, char** args){
 
     yed_glyph * g;
     g = yed_buff_get_glyph(frame->buffer, frame->cursor_line, frame->cursor_col);
+    if (!g) { return; }
 
     int        row, col;
     int        balance;
