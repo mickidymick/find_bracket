@@ -1,2 +1,0 @@
-plugins-add-dir "~/tmp_yed/completed_plugins/find_bracket"
-plugin-load find_bracket
